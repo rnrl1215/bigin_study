@@ -1,0 +1,22 @@
+server:
+  port: 8888
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    url: jdbc:mysql://localhost:33311/jpa-study?autoReconnect=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: user
+    password: 1234
+    driver-class-name: org.mariadb.jdbc.Driver
+jackson:
+  property-naming-strategy: SNAKE_CASE
+logging:
+  level:
+    org.hibernate.SQL: debug # hibernate ???? ?? ??? debug ? ?? ?.
+    org.hibernate.type: trace # parameter log printing ???.
+

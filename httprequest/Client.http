@@ -1,0 +1,25 @@
+POST http://localhost:8888/client
+Content-type: application/json
+
+{
+  "name": "skahn",
+  "email": "d1215@naver.com",
+  "phoneNumber" : "010-2544-3333"
+}
+
+###
+GET http://localhost:8888/client/all
+
+###
+GET http://localhost:8888/client/1
+
+###
+PUT http://localhost:8888/client
+Content-type: application/json
+
+{
+  "id": 1,
+  "name": "skahn",
+  "email": "d1215@naver.com",
+  "phoneNumber": "010-2544-3333"
+}
